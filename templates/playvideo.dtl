@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>I Have Fitness</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="/js/html5.js"></script>
+<script type='text/javascript' src='/js/jquery-1.7.1.min.js'></script>    
+<!--<script src="/js/angular.min.js"></script>
+<script src="/js/controllers.js"></script>-->
+
+    <script src="/js/play_video.js"></script>
+    <script type="text/javascript" src="http://jwpsrv.com/library/5V3tOP97EeK2SxIxOUCPzg.js"></script>
+<script type="text/javascript">jwplayer.key="L0SAYMTJJs/IIkeci5tG4vgIMGHAc6YFBtmJaA==";</script></script> 
+<!--<script src="/js/ui-bootstrap-tpls-0.6.0.js"></script>-->
+<script type="text/javascript">        
+      $(function() {  
+      // blinking text
+      var x;
+     setInterval(function() {
+        if(x == 0) {
+            $('.blinking_text').removeAttr('style');
+           x = 1;
+        } else  {
+            if(x = 1) {
+                $('.blinking_text').css('color', 'black');
+                x = 0;
+            }
+        }
+      }, 500); // change the time if you want
+  });
+</script>
+
+<script type='text/javascript'>
+  //   $(document).ready(function() {              
+  //       // var vastURI = 'http://vast.optimatic.com/vast/getVast.aspx?id=fitn355n37wir3&zone=vpaidtag&pageURL=[INSERT_PAGE_URL]&pageTitle=[INSERT_PAGE_TITLE]&cb=[CACHE_BUSTER]';
+  //       var media_url1 = "http://video1.contentapi.ws/";
+  //       var media_title1 = $('#video_tit1').val();
+  //       var media_desc1 = $('#video_desc1').val();
+  //       var media_duration1 = $('#video_duration1').val();
+  //         // var vastURI = 'http://vast.optimatic.com/vast/getVast.aspx?id=w984i078l984&zone=vpaidtag&pageURL=[INSERT_PAGE_URL]&pageTitle=[INSERT_PAGE_TITLE]&cb=[CACHE_BUSTER]';
+  //       var vastURI = 'http://vpc.altitude-arena.com/vpc.xml?uid=dok6fccef906a545&page_url=[REPLACE]&cb=[REPLACE]&ref_page_url=[REPLACE]&player_width=100%&player_height=364&video_duration='+media_duration1+'&media_file_url='+media_url1+'&media_file_title='+media_title1+'&media_description='+media_desc1+'&media_file_id=playVideo';
+  //       function updateURL(vastURI){
+  //       // Generate a huge random number
+  //       var ord=Math.random(), protocol, host, port, path, pageUrl, updatedURI;
+  //       var parsedFragments = parseUri(vastURI);
+  //       ord = ord * 10000000000000000000;
+  //       // Protocol of VAST URI
+  //       protocol = parsedFragments.protocol;
+  //       // VAST URI hostname
+  //       host = parsedFragments.host;
+  //       // VAST URI Path
+  //       path = parsedFragments.path;
+  //       //VAST Page Url
+  //       pageUrl = parsedFragments.queryKey.pageUrl
+  //       var fragmentString ='';
+  //       //Updated URI
+  //       for(var key in parsedFragments.queryKey){
+  //         // For Cache buster add a large random number
+  //         if(key == 'cb'){
+  //           fragmentString = fragmentString + key + '=' + ord + '&';  
+  //         }
+  //         // for referring Page URL, get the current document URL and encode the URI
+  //         else if(key == 'page_url'){
+  //           var currentUrl = document.URL;
+  //           fragmentString = fragmentString + key + '=' + currentUrl + '&'; 
+  //         }else if(key == 'ref_page_url'){
+  //           var currentUrl = document.URL;
+  //           //var currentUrl = "http://test.com";
+  //           fragmentString = fragmentString + key + '=' + currentUrl + '&'; 
+  //         }else if(key == 'pageTitle'){
+  //           var page_title=document.title;
+  //           fragmentString = fragmentString + key + '=' + page_title + '&'; 
+  //         }
+  //         else{
+  //           fragmentString = fragmentString + key + '=' + parsedFragments.queryKey[key] + '&';
+  //         }
+          
+  //       }
+
+  //       updatedURI = protocol + '://' + host + path + '?' + fragmentString ;
+        
+  //       // Remove the trailing & and return the updated URL
+  //       return updatedURI.slice(0,-1);
+  //       }
+
+  //       // Parse URI to get qeury string like cb for cache buster and pageurl
+  //     function parseUri (str) {
+  //       var o   = parseUri.options,
+  //         m   = o.parser[o.strictMode ? "strict" : "loose"].exec(str),
+  //         uri = {},
+  //         i   = 14;
+
+  //       while (i--) uri[o.key[i]] = m[i] || "";
+
+  //       uri[o.q.name] = {};
+  //       uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
+  //         if ($1) uri[o.q.name][$1] = $2;
+  //       });
+
+  //       return uri;
+  //     };
+
+  //     parseUri.options = {
+  //       strictMode: false,
+  //       key: ["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"],
+  //       q:   {
+  //         name:   "queryKey",
+  //         parser: /(?:^|&)([^&=]*)=?([^&]*)/g
+  //       },
+  //       parser: {
+  //         strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
+  //         loose:  /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
+  //       }
+  //     };
+  //     // end of code for generating cb,pagetit,pageurl
+  //   jwplayer('playVideo').setup({
+  //     "flashplayer": "http://player.longtailvideo.com/player.swf",
+  //     "playlist": [
+  //       {
+  //         "file": "http://video1.contentapi.ws/{{newsParam.video}}"
+  //       }
+  //     ],  
+  //     "width": '100%',
+  //     "height": 364,
+  //     stretching: "exactfit",
+  //     autostart: false,
+  //     "controlbar": {
+  //       "position": "bottom"
+  //     },
+  //     "plugins": {
+  //       "ova-jw": {
+  //         "ads": {
+  //           "companions": {
+  //             "regions": [
+  //               {
+  //                 "id": "companion",
+  //                 "width": 80,
+  //                 "height": 300
+  //               }
+  //             ]
+  //           },
+  //           "schedule": [
+  //             {
+  //               "position": "pre-roll",
+  //               "tag": updateURL(vastURI)
+  //             }
+  //           ]
+  //         },
+  //         "debug": {
+  //           "levels": "none"
+  //         }
+  //       }
+  //     }
+  //   });
+  // });
+</script>
+<!-- google analytics start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43119651-14', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- google analytics end -->
+      
+</head>
+
+<body>
+<div class="headerbg">
+  <div class="container">
+    <header> <a href="/" title="I Have Fitness"><img src="/images/logo.png" alt="" /></a>
+      <span class="clear"></span>
+      <nav>
+        <ul>
+          <li><a href="/" title="Home">Home</a></li>
+          <!--<li><a href="/beauty" title="Beauty">Beauty</a></li>-->
+          <li class="active"><a href="/videos" title="Videos">Videos</a></li>
+        </ul>
+      </nav>
+      <div class="topAd">
+        <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=557677&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=205120"></script>
+      </div>
+      <span class="clear"></span> </header>
+    <section class="hotnews"> <span id="blink" class="blinking_text">{{ fitnesshot.value.title }} </span> </section>
+    <section class="contentarea">
+    <div class="module video-stream">
+      <div class="video-title"><h2>{{newsParam.title}} <span>{{newsParam.upload_date}}</span></h2> </div>
+      <input type="hidden" name="video_name" id="video_name" value="{{newsParam.video}}" />
+      <input type="hidden" name="video_tit" id="video_tit" value="{{newsParam.title}}">
+      <input type="hidden" name="video_desc" id="video_desc" value="{{videoParam.description}}">
+      <input type="hidden" name="video_duration" id="video_duration" value="{{videoParam.duration}}">
+      <div id="myElement">Loading the player...</div>                
+                
+    </div><!-- video module end -->
+
+      <!--<aside class="leftcontent width30">
+     
+        <div class="newsrow">
+          <div class="ad-photo-gal">          
+            <div class="ad1">
+              <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=557677&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=205119"></script>
+            </div>
+
+            <div class="ad1 beautyclass">
+              <a href="/beautynews/{{ beauty1.id }}" title="{{ beauty1.title }}">
+                <img  src="http://img1.contentapi.ws/{{ beauty1.thumb_image}}" alt="" title="{{ beauty1.title }}">
+              </a>
+            </div>
+
+          <div class="PhotoGal margin7_T"> 
+          {% for n in beauty %}             
+            <a href="/beautynews/{{ n.id }}" title="{{ n.title }}" >
+              <img  src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" title="{{ n.title }}">
+            </a>
+          {% endfor %}              
+        </div>
+            <div class="rightad">
+            <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=557677&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=205119"></script>
+          </div>
+          </div>
+          
+        </div>
+      </aside>
+
+      <div class="gap left">&nbsp;</div>-->
+
+      <aside class="leftcontent">
+      <!-- <div class="newsrow"> -->
+          <!-- <div class="LeftNewsDiv">  -->
+              <!--<input type="hidden" name="video_tit1" id="video_tit1" value="{{newsParam.title}}">
+              <input type="hidden" name="video_desc1" id="video_desc1" value="{{newsParam.description}}">
+              <input type="hidden" name="video_duration1" id="video_duration1" value="{{newsParam.duration}}">      
+               <div id="playVideo">Loading the player...</div>
+              <div class="description">
+                <h3>{{ newsParam.title }} </h3>
+                <p class="padding10_TB">{{ newsParam.description }} </p>
+                <p class="date"><span>{{ newsParam.upload_date }}</span></p>
+              </div> -->
+            <!-- description end --> 
+          <!-- </div> -->
+          <!-- LeftNewsDiv end -->          
+        <!-- </div>        -->
+          <div class="fitnews fitnews-middle">
+          {% for n in allnews %}
+          <div class="colum1">
+            <div class="thumb">
+              <a href="/playvideo/{{n.id}}"><span class="play"></span><img src="http://img1.contentapi.ws/{{n.thumb_image}}" alt="" title="{{n.title}}"/></a>
+            </div>
+          <div class="description">
+              <h3><a href="/playvideo/{{n.id}}">{{ n.title|slice:":45" }}</a> </h3>
+              <p class="date"><span>{{ n.upload_date }}</span></p>
+          </div></div>
+          {% endfor %}
+        
+         
+          <!-- LeftNewsDiv end --> 
+        </div>
+        
+      </aside>
+
+      <aside class="rightcontent">      	
+          <div class="rightad">
+            <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=300X250&cwpid=557677&cwwidth=300&cwheight=250&cwpnet=1&cwtagid=205119"></script>
+          </div>  
+
+        <div class="fitnews margin7_T">
+        {% for n in fitness %}
+          <div class="colum1 newcol">
+            
+              <div class="thumb"><a href="/news/{{n.value.id}}">
+                <img src="http://img1.contentapi.ws/{{n.value.thumb_image}}" alt="" title="{{n.value.title}}"/> </a>
+              </div>
+           
+            <div class="description">
+                <h3><a href="/news/{{n.value.id}}">{{ n.value.title }}</a> </h3>
+                <p class="date"><span>{{ n.value.upload_date }}</span></p>
+            </div>
+          </div>
+          {% endfor %}         
+        </div>
+      
+        <div class="twitterAdd">
+          <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=160X600&cwpid=557677&cwwidth=160&cwheight=600&cwpnet=1&cwtagid=205118"></script>
+        </div>
+        <!-- /div> -->
+      </aside>
+    <span class="clear"></span>
+  </section>
+    <span class="clear"></span> </div>
+</div>
+<!-- headerbg end -->
+<div class="bottomad">
+  <script src="http://tag.contextweb.com/TagPublish/getjs.aspx?action=VIEWAD&cwrun=200&cwadformat=728X90&cwpid=557677&cwwidth=728&cwheight=90&cwpnet=1&cwtagid=205120"></script>
+</div>
+<div class="footer">
+	<div class="container">
+      <p>Copyright &copy; {% now "Y" %} Fitnessnetwire All Rights Reserved</p>
+     <div class="follow">
+        <a href="#" class="fb" target="_blank"></a>
+        <a href="#" class="tw" target="_blank"></a>
+        <a href="#" class="yt" target="_blank"></a>
+        <a href="#" class="rss" target="_blank"></a>
+     </div>
+      <span class="clear"></span>
+    </div>
+</div>
+</body>
+</html>

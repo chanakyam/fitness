@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+	outline:none;
+	list-style-type:none;
+}
+body {
+	border-top:10px solid #000;
+	background:url(../images/body-bg.jpg) repeat left top;
+	font-family:'Helvetica Light', arial;
+	font-size:14px;
+}
+a {color:#000; text-decoration: none;}
+.clear {
+	clear:both;
+	width:100%;
+	display:block;
+	height:0;
+	overflow:hidden;
+}
+.container {
+	margin:0 auto;
+	position:relative;
+	max-width:982px;
+}
+.headerbg {
+	float:left;
+	width:100%;
+	background:url(../images/header-bg.jpg) repeat-x center top;
+	min-height:275px;
+}
+header, nav, section, article, section, aside {
+	display:block;
+}
+header {
+	padding-top:15px;
+}
+.searchform {
+	float:right;
+}
+.searchbox {
+	background:#fff;
+	border:0;
+	border-left:2px solid #46b936;
+	padding:9px 10px 8px;
+	font-size:12px;
+	float:left;
+	width:252px;
+	font-family: 'Helvetica Light', arial;
+}
+.searchbtn {
+	width:38px;
+	height:32px;
+	background:#46b936 url(../images/serch-icon.png) no-repeat center center;
+	text-indent:-9999px;
+	font-size:0;
+	border:none;
+	cursor:pointer;
+	float:left;
+	color:#000;
+}
+ @font-face {
+ font-family: 'Helvetica Light';
+ src: url('../fonts/HelveticaNeueLTPro-Lt.eot');
+ src: local('hl'), url('../fonts/HelveticaNeueLTPro-Lt.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+ @font-face {
+ font-family: 'TradeGothicLT-Std';
+ src: url('../fonts/Trade-Gothic-LT-Std.eot');
+ src: local('tgt'), url('../fonts/Trade-Gothic-LT-Std.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+nav {
+	background:#000;
+	width:100%;
+	float:left;
+	margin-top:10px;
+}
+nav ul {
+	list-style-type:none;
+	margin-left:2px;
+	font-family: 'TradeGothicLT-Std', arial;
+	font-size:14px;
+}
+nav ul li {
+	float:left;
+	background:url(../images/divider.jpg) no-repeat left 22px;
+}
+nav ul li:first-child {
+	background:none;
+}
+nav ul li a {
+	color:#fff;
+	text-decoration:none;
+	padding:18px;
+	float:left;
+}
+nav ul li a:hover, nav ul li.active a {
+	color:#000;
+	background:#fffa5d;
+}
+.topAd {
+	clear:both;
+	text-align:center;
+	padding:13px 0;
+}
+.hotnews {
+	background:#f25a29 url(../images/news-arrow.jpg) no-repeat left top;
+	margin:15px 0;
+	color:#fff;
+	padding:8px 8px 6px 142px
+}
+.contentarea {
+	float:left;
+	width:100%;
+	padding-bottom:20px;
+}
+.leftcontent {
+	float:left;
+	width:68%;
+}
+.leftcontent1 {
+	float:left;
+	width:69%;
+}
+.rightcontent {
+	float:right;
+	width:31%;
+}
+.LeftNewsDiv {
+	float:left;
+	margin:0 0;
+	background:#fff;
+	width:49%;
+	position:relative;
+}
+.newslikes {
+	position:absolute;
+	left:0;
+	top:0;
+}
+.fb-icon {
+	float:left;
+	background:#46b936 url(../images/fb-icon.png) no-repeat 8px 8px;
+	padding:8px 8px 8px 25px;
+	text-align:right;
+	margin-right:1px;
+}
+.comment-icon {
+	width:36px;
+	height:33px;
+	background:#46b936 url(../images/comment-icon.png) no-repeat center center;
+	float:left;
+}
+.CatTitle {
+	background:#fefefe;
+	font-size:18px;
+	color:#46b936;
+	padding:6px 8px;
+	float: left;
+}
+.LeftNewsDiv img {
+	width:100%;
+	display:block;
+}
+.description {
+	padding:15px;
+	font-weight:normal;
+	font-size:13px;
+	padding-bottom:35px; position:relative;
+}
+.LeftNewsDiv h3, .RightNewsDiv h3.ng-binding {
+	font-family: 'Lato Light', arial;
+	font-size:18px;
+}
+
+
+
+@font-face {
+ font-family: 'Lato Light';
+ src: url('../fonts/Lato-Light.eot');
+ src: local('ll'), url('../fonts/Lato-Light.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+.padding10_TB {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.padding15_TB {
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.date {
+	text-align:right; float: right;
+	color:#46b936;
+	/*width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;*/
+}
+.date span {
+	padding-right:15px;
+	display:block;
+}
+.newsrow {
+	display:table;
+	padding-bottom:1%;
+}
+.LeftNewsDiv {
+	float:none;
+	display:table-cell;
+	vertical-align:top;
+}
+.gap {
+	width:1%;
+	display:table-cell;
+}
+.ad-photo-gal {
+	margin:0 0;
+	width:300px;
+	position:relative;
+	display:table-cell;
+	vertical-align:top;
+}
+.ad1 img {
+	display:block;
+	width:100%;
+}
+.PhotoGal {
+	position:relative;
+	background:#9f1c22;
+	padding-top:7px;
+	margin-top:2%;
+	overflow:hidden;
+}
+.PhotoGal img {
+	width:30%;
+	margin:0 0 2.5% 2.5%;
+	display:inline;
+	float:left;
+}
+.showmore {
+	padding-right:12px;
+	display:block;
+	width:150px;
+	text-decoration:none;
+	clear:both;
+	margin:10px auto 0;
+	background:#f15a29;
+	border-bottom:2px solid #c9c9c9;
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+}
+.showmore span {
+	background:url(../images/down-arrow.png) no-repeat right 15px;
+	display:block;
+	cursor:pointer;
+	padding:8px 0
+}
+.showmore:hover{ background:#bf4119;} 
+.bottomad{ text-align:center; padding:20px 0; background:#f2f2f0; clear:both;}
+
+.footer{ background:#46b936; padding:12px 0; color:#fff; font-size:12px;}
+.footer p{ float:left; padding-top:8px;}
+.follow{ float:right;}
+.follow a{ background-image:url(../images/follow.jpg);background-repeat: no-repeat; width:29px; height:30px; float:left; margin-left:1px;}
+.tw{ background-position: -30px 0;}
+.yt{ background-position: -66px 0;}
+.rss{ background-position: -96px 0;}
+.follow a:hover{ background-position:0 -31px;}
+.follow a.tw:hover{ background-position:-30px -31px;}
+.follow a.yt:hover{ background-position:-66px -31px;}
+.follow a.rss:hover{ background-position:-96px -31px;}
+
+.RightNewsDiv{
+	margin:0 0;
+	width:100%;
+	position:relative;
+	vertical-align:top;
+	background:#fff;
+}
+.RightNewsDiv img {
+	display:block;
+	width:100%;
+}
+.rightad img{ width:100%}
+.margin20_T{ margin-top:20px;}
+.margin15_T{ margin-top:15px;}
+.margin7_T{ margin-top:7px;}
+
+
+.fitnews{ background:#fff; padding:10px;}
+.fitnews:after, .fitnews:after {display:table; content:"";}
+.fitnews:after {clear:both;}
+
+.fitnews .fitnewsrow:first-child{border-top:1px dashed #94977b; }
+.fitnewsrow{ width:100%;float:left; padding:5px 0; border-bottom:1px dashed #94977b; position:relative;}
+/*.fitnewsrow:hover{ background:#fefdd0; }*/
+.fitnewsrow img{ float:left; width:20%; margin-right: 10px;}
+/*.fitnewsrow h3, .fitnewsrow p { padding-left:32%;}*/
+
+h3 a, .fitnewsrow h3 a, .fitnewsrow p a {color:#000; text-decoration:none;}
+.fitnewsrow h3{ margin-top: 3px;}
+.twittertweets{ background:#fff; overflow:hidden; padding:10px;}
+.FieldLeft {
+float: left;
+padding-right: 10px;
+position: relative;
+width: 47%;
+}
+.FieldLeft p {
+padding-bottom: 5px;
+margin: 0 5px 10px;
+font-size: 12px;
+}
+.twitterAdd {
+float: none;
+margin-top: 10px;
+width: 46%;
+}
+.twitterAdd  img{ width:100%;}
+
+
+.width40 {width:42%;}
+.width25 {width:25%;}
+.width30 {width: 30%;}
+.width38 {width: 38%;}
+
+.beautyclass {background: #9f1c22;
+padding: 6px;
+padding-bottom: 0;
+margin-top: 3%;
+margin-bottom: -2%;
+}
+
+.colum1 {float:left; padding:5px 0; border-bottom:1px dashed #94977b; position:relative;}
+.colum1 img {width:100%; line-height: 0;}
+.colum1 > .description {padding:5px; width:50%; float: left;}
+
+.fitnews .colum1:first-child {
+border-top:0;
+}
+.left {float:left;}
+#blink {font-size: 14px; font-family: arial}
+
+/*added for video ad*/
+#myElement{display:block;width:983px;height:425px;margin:10px auto}
+.video-title{ color: #FF0;}
+.play {background:url(../images/play.png) no-repeat 0 0; width:41px; height:41px; display:block; position:absolute; left:35%; top:30%;}
+
+
+.video-stream {
+border-bottom: 4px solid #fff;
+background: #ccc;
+font-family: 'Lato Light', arial;
+color: #000;
+}
+.video-title {
+color: #000;
+padding:5px;
+line-height:22px;
+}
+
+.video-title span {font-size:14px;}
+
+.thumb {position: relative; width: 45%; float: left;}
+
+.fitnews-middle .colum1 {
+width: 31%;
+margin-left: 2%;
+min-height: 155px;
+}
+
+.fitnews-middle .thumb {
+  width: 100%;
+}
+.fitnews .thumb { margin-right: 5px;position: relative;
+z-index: 1}
+.fitnews-middle .colum1 img {
+max-height: 90px;
+}
+.fitnews-middle .colum1 > .description{ width:100%;}
+.fitnews-middle .description h3 {font-size: 13px;}
+.fitnews-middle .date{ float: none; text-align: left;}
+.newcol{ width: 100%;}
+.newcol .description{ width:auto; float: none;}
+.newcol .description:after{ clear: both;display: table;content: '';width: 100%}

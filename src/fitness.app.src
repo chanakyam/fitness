@@ -1,0 +1,19 @@
+{application, fitness,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  goldrush,
+                  lager,
+                  cowboy,
+                  jsx,
+                  ibrowse,
+                  erlydtl
+                 ]},
+  {mod, { fitness_app, []}},
+  {env, []}
+ ]}.
