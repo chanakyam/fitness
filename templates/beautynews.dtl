@@ -88,7 +88,7 @@
           {% for n in fitness %}
           <div class="colum1 newcol">
             <!-- <div class="thumb">
-              <a href="/news/{{n.id}}"><img src="http://img1.contentapi.ws/{{n.thumb_image}}" alt="" title="{{n.title}}"/></a>
+              <a href="/news/{{n.id}}"><img src="http://newscdn.lycos.com/{{n.thumb_image}}" alt="" title="{{n.title}}"/></a>
             </div> -->
             <div class="description">
                 <h3><a href="/news/{{n.id}}">{{ n.title }}</a> </h3>
@@ -111,7 +111,7 @@
       <aside class="leftcontent width38">
       <div class="newsrow">
           <div class="LeftNewsDiv">           
-              <img src="http://img1.contentapi.ws/{{ newsParam.image_name }}" alt="" title=""/>
+              <img src="http://newscdn.lycos.com/{{ newsParam.image_name }}" alt="" title=""/>
             <div class="description">
               <h3>{{ newsParam.title }} </h3>
               <p class="padding10_TB">{{ newsParam.content }} </p>
@@ -132,7 +132,7 @@
           {% for n in videos %}
           <div class="colum1">
             <div class="thumb">
-              <a href="/playvideo/{{n.id}}"><span class="play"></span><img src="http://img1.contentapi.ws/{{n.thumb_image}}" alt="" title="{{n.title}}"/></a>
+              <a href="/playvideo/{{n.id}}"><span class="play"></span><img src="http://newscdn.lycos.com/world_news/{{n.thumb_image}}" alt="" title="{{n.title}}"/></a>
             </div>
             <div class="description">
                 <h3><a href="/playvideo/{{n.id}}">{{ n.title }}</a> </h3>

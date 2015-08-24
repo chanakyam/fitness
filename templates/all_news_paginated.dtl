@@ -87,13 +87,13 @@
             </div>
             <div class="ad1 beautyclass">
               <a href="/beautynews/{{ beauty1.id }}" title="{{ beauty1.title }}" >
-              <img  src="http://img1.contentapi.ws/{{ beauty1.thumb_image }}" alt="" title="{{ beauty1.title }}">
+              <img  src="http://newscdn.lycos.com/{{ beauty1.thumb_image }}" alt="" title="{{ beauty1.title }}">
               </a>
             </div>
             <div class="PhotoGal"> 
             {% for n in beauty %}             
               <a href="/beautynews/{{ n.id }}" title="{{ n.title }}">
-                <img  src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" title="{{ n.title }}">
+                <img  src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="" title="{{ n.title }}">
               </a>
             {% endfor %}              
             </div>
@@ -114,7 +114,7 @@
           {% for n in allnews %}
           <div class="fitnewsrow">            
             <a href="/news/{{n.value.id}}">
-              <img src="http://img1.contentapi.ws/{{n.value.thumb_image}}" alt="" title="{{n.value.title}}"/>
+              <img src="http://newscdn.lycos.com/{{n.value.thumb_image}}" alt="" title="{{n.value.title}}"/>
             </a>           
             <h3><a href="/news/{{n.value.id}}">{{n.value.title}}</a> </h3>
             <p class="padding10_TB"><a href="/news/{{n.value.id}}">{{n.value.description}}</a></p>
@@ -138,7 +138,7 @@
             <div class="thumb">
               <a href="/playvideo/{{n.id}}">
                 <span class="play"></span>
-                <img src="http://img1.contentapi.ws/{{n.thumb_image}}" alt="" title="{{n.title}}"/>
+                <img src="http://newscdn.lycos.com/world_news/{{n.thumb_image}}" alt="" title="{{n.title}}"/>
               </a>
             </div>
             <div class="description">

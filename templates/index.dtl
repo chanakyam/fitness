@@ -93,7 +93,7 @@
             <!-- <div class="PhotoGal"> 
             {% for n in beautyimgs %}              
               <a href="/beautynews/{{ n.id }}" title="{{ n.title }}">
-                <img  src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" >
+                <img  src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="" >
               </a>
               {% endfor %}               
             </div> -->
@@ -101,7 +101,7 @@
           <div class="gap"></div>
         {% endif %}
           <div class="LeftNewsDiv">
-            <a href="news/{{ n.value.id }}"><img src="http://img1.contentapi.ws/{{ n.value.view_image }}" alt="" title="{{n.value.title}}"/></a>
+            <a href="news/{{ n.value.id }}"><img src="http://newscdn.lycos.com/{{ n.value.view_image }}" alt="" title="{{n.value.title}}"/></a>
             <div class="description">
               <h3><a href="news/{{ n.value.id }}">{{ n.value.title }} </a></h3>
               <p class="padding10_TB"><a href="news/{{ n.value.id }}">{{ n.value.description }} </a></p>
@@ -120,7 +120,7 @@
         {% for n in latestnews8 %}
       	<div class="RightNewsDiv">
             <a href="/news/{{ n.value.id }}">
-              <img src="http://img1.contentapi.ws/{{ n.value.view_image }}" alt="" title="{{n.value.title}}"/>
+              <img src="http://newscdn.lycos.com/{{ n.value.view_image }}" alt="" title="{{n.value.title}}"/>
             </a>
             <div class="description">
               <h3><a href="/news/{{ n.value.id }}">{{ n.value.title }}</a></h3>
@@ -138,7 +138,7 @@
 
           <!-- <div class="RightNewsDiv">
             <a href="/news/{{ latestnews9.id }}">
-              <img src="http://img1.contentapi.ws/{{ latestnews9.thumb_image }}" alt="" title="{{latestnews9.title}}"/>
+              <img src="http://newscdn.lycos.com/{{ latestnews9.thumb_image }}" alt="" title="{{latestnews9.title}}"/>
             </a>
             <div class="description">
               <h3><a href="/news/{{ latestnews9.id }}">{{ latestnews9.title }}</a></h3>

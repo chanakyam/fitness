@@ -92,7 +92,7 @@
             <div class="PhotoGal"> 
             {% for n in fitnessimgs %}             
               <a  href="/news/{{ n.id }}" title="{{ n.title }}">
-                <img  src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" >
+                <img  src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="" >
               </a>
             {% endfor %}              
             </div>
@@ -100,7 +100,7 @@
           <div class="gap"></div>
         {% endif %}
           <div class="LeftNewsDiv">
-            <a href="beautynews/{{ n.id }}"><img src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" title="{{n.title}}"/></a>
+            <a href="beautynews/{{ n.id }}"><img src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="" title="{{n.title}}"/></a>
             <div class="description">
               <h3><a href="beautynews/{{ n.id }}">{{ n.title }} </a></h3>
               <p class="padding10_TB"><a href="beautynews/{{ n.id }}">{{ n.description }} </a></p>
@@ -119,7 +119,7 @@
       <aside class="rightcontent">
       	<div class="RightNewsDiv">
             <a href="beautynews/{{ beautynews8.id }}">
-              <img src="http://img1.contentapi.ws/{{ beautynews8.thumb_image }}" alt="" title="{{ beautynews8.title }}"/>
+              <img src="http://newscdn.lycos.com/{{ beautynews8.thumb_image }}" alt="" title="{{ beautynews8.title }}"/>
             </a>
             <div class="description">
               <h3><a href="beautynews/{{ beautynews8.id }}">{{ beautynews8.title }}</a></h3>
@@ -134,7 +134,7 @@
           </div> 
           <!-- <div class="RightNewsDiv">
             <a href="beautynews/{{ beautynews9.id }}">
-              <img src="http://img1.contentapi.ws/{{ beautynews9.thumb_image }}" alt="" title="{{ beautynews9.title }}"/>
+              <img src="http://newscdn.lycos.com/{{ beautynews9.thumb_image }}" alt="" title="{{ beautynews9.title }}"/>
             </a>
             <div class="description">
               <h3><a href="beautynews/{{ beautynews9.id }}">{{ beautynews9.title }}</a></h3>

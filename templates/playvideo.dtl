@@ -209,14 +209,14 @@
 
             <div class="ad1 beautyclass">
               <a href="/beautynews/{{ beauty1.id }}" title="{{ beauty1.title }}">
-                <img  src="http://img1.contentapi.ws/{{ beauty1.thumb_image}}" alt="" title="{{ beauty1.title }}">
+                <img  src="http://newscdn.lycos.com/{{ beauty1.thumb_image}}" alt="" title="{{ beauty1.title }}">
               </a>
             </div>
 
           <div class="PhotoGal margin7_T"> 
           {% for n in beauty %}             
             <a href="/beautynews/{{ n.id }}" title="{{ n.title }}" >
-              <img  src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" title="{{ n.title }}">
+              <img  src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="" title="{{ n.title }}">
             </a>
           {% endfor %}              
         </div>
@@ -250,7 +250,7 @@
           {% for n in allnews %}
           <div class="colum1">
             <div class="thumb">
-              <a href="/playvideo/{{n.id}}"><span class="play"></span><img src="http://img1.contentapi.ws/{{n.thumb_image}}" alt="" title="{{n.title}}"/></a>
+              <a href="/playvideo/{{n.id}}"><span class="play"></span><img src="http://newscdn.lycos.com/world_news/{{n.thumb_image}}" alt="" title="{{n.title}}"/></a>
             </div>
           <div class="description">
               <h3><a href="/playvideo/{{n.id}}">{{ n.title|slice:":45" }}</a> </h3>
@@ -274,7 +274,7 @@
           <div class="colum1 newcol">
             
               <div class="thumb"><a href="/news/{{n.value.id}}">
-                <img src="http://img1.contentapi.ws/{{n.value.thumb_image}}" alt="" title="{{n.value.title}}"/> </a>
+                <img src="http://newscdn.lycos.com/{{n.value.thumb_image}}" alt="" title="{{n.value.title}}"/> </a>
               </div>
            
             <div class="description">

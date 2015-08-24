@@ -90,14 +90,14 @@
             </div> 
             <div class="ad1 beautyclass">
               <a href="/beautynews/{{ beauty1.id }}" title="{{ beauty1.title }}">
-                <img  src="http://img1.contentapi.ws/{{ beauty1.thumb_image}}" alt="" >
+                <img  src="http://newscdn.lycos.com/{{ beauty1.thumb_image}}" alt="" >
               </a>
             </div>
 
           <div class="PhotoGal margin7_T">
           {% for n in beauty %}              
             <a href="/beautynews/{{ n.id }}" title="{{ n.title }}">
-              <img  src="http://img1.contentapi.ws/{{ n.thumb_image }}" alt="" title="{{ n.title }}">
+              <img  src="http://newscdn.lycos.com/{{ n.thumb_image }}" alt="" title="{{ n.title }}">
             </a>
           {% endfor %}              
         </div>      
@@ -118,7 +118,7 @@
       <aside class="leftcontent">
       <div class="newsrow">
           <div class="LeftNewsDiv">          
-              <img src="http://img1.contentapi.ws/{{ newsParam.base_image }}" alt="" title=""/>
+              <img src="http://newscdn.lycos.com/{{ newsParam.base_image }}" alt="" title=""/>
             <div class="description">
               <h3>{{ newsParam.title }} </h3>
               <p class="padding10_TB">{{ newsParam.news_body }} </p>
@@ -140,7 +140,7 @@
           <div class="colum1 newcol">
             <a href="/playvideo/{{n.id}}">
               <div class="thumb">
-                <span class="play"></span><img src="http://img1.contentapi.ws/{{n.thumb_image}}" alt="" title="{{n.title}}"/>
+                <span class="play"></span><img src="http://newscdn.lycos.com/world_news/{{n.thumb_image}}" alt="" title="{{n.title}}"/>
               </div>
             </a>
             <div class="description">
